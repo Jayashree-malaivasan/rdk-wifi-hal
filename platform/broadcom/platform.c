@@ -2834,7 +2834,7 @@ int platform_get_radio_phytemperature(wifi_radio_index_t index,
     return RETURN_OK;
 }
 
-#elif defined (TCHCBRV2_PORT) || defined(_SR213_PRODUCT_REQ_)
+#elif defined (TCHCBRV2_PORT) || defined(_SR213_PRODUCT_REQ_) || defined(SCXER10_PORT)
 
 int platform_get_radio_phytemperature(wifi_radio_index_t index,
     wifi_radioTemperature_t *radioPhyTemperature)
@@ -2851,7 +2851,7 @@ int platform_get_radio_phytemperature(wifi_radio_index_t index,
     return RETURN_OK;
 }
 
-#elif defined(SCXER10_PORT) || defined(SCXF10_PORT)
+#elif defined(SCXF10_PORT)
 /* Need to be re-examined for XF10 */
 int platform_get_radio_phytemperature(wifi_radio_index_t index,
     wifi_radioTemperature_t *radioPhyTemperature)
